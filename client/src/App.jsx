@@ -1,11 +1,11 @@
-
+import Slider from "./components/slider"
 
 function App() {
  
 
   return (
   <>
-  
+  <Slider/>
   </>
   )
 }
