@@ -30,11 +30,24 @@ const generalStore = create((set) => ({
   ],
 
   // Contact actions for SpeedDial
-  actions: [
-    { icon: 'whatsapp', name: 'WhatsApp' },
-    { icon: 'email', name: 'Email' },
-    { icon: 'phone', name: 'Phone' },
-  ],
+actions: [
+  {
+    icon: 'whatsapp',
+    name: 'WhatsApp',
+    link: 'https://wa.me/919894494442?text="Hello This is "',
+  },
+  {
+    icon: 'email',
+    name: 'Email',
+    link: 'mailto:livewireform@gmail.com',
+  },
+  {
+    icon: 'phone',
+    name: 'Phone',
+    link: 'tel:+919894494442',
+  },
+],
+
 
   // Set title card dynamically
   setTitlecard: (newCard) => set({ titlecard: newCard }),
