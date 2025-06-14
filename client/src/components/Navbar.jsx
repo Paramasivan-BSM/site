@@ -92,14 +92,20 @@ export default function Navbar() {
         sx={{ position: 'fixed', bottom: 24, right: 24, zIndex: 20 }}
         icon={<SupportAgentIcon />}
       >
-        {actions.map((action) => (
-          <SpeedDialAction
-            key={action.name}
-            icon={iconMap[action.name]}
-            tooltipTitle={action.name}
-            onClick={() => alert(`${action.name} clicked`)}
-          />
-        ))}
+{actions.map((action) => (
+  <SpeedDialAction
+    key={action.name}
+    icon={iconMap[action.name]}
+    tooltipTitle={action.name}
+    onClick={() => {
+      if (action.link) {
+        window.open(action.link, '_blank');
+      }
+    }}
+  />
+))}
+
+
       </SpeedDial>
     </>
   );
