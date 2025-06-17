@@ -49,6 +49,28 @@ actions: [
 ],
 
 
+
+ImageCarousel : (title)=>{
+
+  switch(title){
+    case "CADD CENTRE": 
+    return ["https://caddcentre.com/assets/images/banner/home/ai-powerup-product-design.jpg","https://caddcentre.com/assets/images/banner/home/ai-powerup-smart-building.jpg"];
+
+    case "LIVEWIRE":
+      return ["https://livewireindia.com/assets/banner/full-stack.jpg"];
+
+      case "SYNERGY" :
+        return ["https://livewireindia.com/assets/banner/data-science.jpg"];
+  }
+
+
+
+},
+
+
+
+
+
   // Set title card dynamically
   setTitlecard: (newCard) => set({ titlecard: newCard }),
 }));
