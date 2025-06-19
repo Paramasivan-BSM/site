@@ -1,4 +1,17 @@
 import {create} from 'zustand';
+import CADD1 from '../assets/Images/CADD1.jpg';
+import CADD2 from '../assets/Images/CADD 2.jpg';
+import CADD3 from '../assets/Images/CADD 3.jpg';
+import CADD4 from '../assets/Images/CADD 4.jpg';
+
+import LiveWire1 from '../assets/Images/LiveWire1.jpg';
+import LiveWire2 from '../assets/Images/LiveWire2.jpg';
+import LiveWire3 from '../assets/Images/LiveWire3.jpg';
+import LiveWire4 from '../assets/Images/LiveWire4.jpg';
+
+import Synergy1 from '../assets/Images/Synergys1.jpg';
+import Synergy2 from '../assets/Images/Synergys2.jpg';
+
 
 const generalStore = create((set) => ({
   // Active title card
@@ -54,13 +67,13 @@ ImageCarousel : (title)=>{
 
   switch(title){
     case "CADD CENTRE": 
-    return ["https://caddcentre.com/assets/images/banner/home/ai-powerup-product-design.jpg","https://caddcentre.com/assets/images/banner/home/ai-powerup-smart-building.jpg"];
+    return [CADD1,CADD2,CADD3,CADD4];
 
     case "LIVEWIRE":
-      return ["https://livewireindia.com/assets/banner/full-stack.jpg"];
+      return [LiveWire1,LiveWire2,LiveWire3,LiveWire4];
 
       case "SYNERGY" :
-        return ["https://livewireindia.com/assets/banner/data-science.jpg"];
+        return [Synergy1,Synergy2];
   }
 
 
