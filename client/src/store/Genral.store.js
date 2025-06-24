@@ -77,61 +77,142 @@ actions: [
 ],
 
 courses: [
-    {
-      id: 1,
-      title: "MERN Stack Development",
-      description: "Master MongoDB, Express, React, and Node.js for full-stack web apps.",
-      image: MERN,
-    },
-    {
-      id: 2,
-      title: "MEAN Stack Development",
-      description: "Learn MongoDB, Express, Angular, and Node.js for modern web apps.",
-      image: MEAN,
-    },
-    {
-      id: 3,
-      title: "Spring Boot with Java",
-      description: "Enterprise app development using Spring Boot and Java backend.",
-      image: SPRING,
-    },
-    {
-      id: 4,
-      title: "Artificial Intelligence",
-      description: "Build smart systems with AI concepts and tools like Python, TensorFlow.",
-      image: AI,
-    },
-    {
-      id: 5,
-      title: "Data Science & Analytics",
-      description: "Data wrangling, visualization, ML models, using Python/R.",
-      image: DATA,
-    },
-    {
-      id: 6,
-      title: "AutoCAD Training",
-      description: "Learn 2D/3D drafting and design using industry-standard AutoCAD tools.",
-      image: AUTOCAD,
-    },
-    {
-      id: 7,
-      title: "Python Programming",
-      description: "From beginner to advanced scripting, OOP, and libraries.",
-      image: PYTHON,
-    },
-    {
-      id: 8,
-      title: "Full Stack Web Development",
-      description: "Complete front-end and back-end development bootcamp.",
-      image: FULLSTACK,
-    },
-    {
-      id: 9,
-      title: "Cloud Computing Basics",
-      description: "Understand AWS, Azure, and DevOps cloud fundamentals.",
-      image: CLOUD,
-    },
-  ],
+  {
+    id: 1,
+    title: "MERN Stack Development",
+    description: "Master MongoDB, Express, React, and Node.js for full-stack web apps.",
+    image: MERN,
+    syllabus: [
+      "HTML, CSS, JavaScript",
+      "React.js with Redux",
+      "Node.js & Express.js",
+      "MongoDB & Mongoose",
+      "REST APIs and JWT Authentication"
+    ],
+    tools: ["VS Code", "Postman", "MongoDB Compass", "GitHub", "Nodemon"],
+    summary: "The MERN Stack course trains students to build powerful, dynamic, and modern web applications using JavaScript technologies."
+  },
+  {
+    id: 2,
+    title: "MEAN Stack Development",
+    description: "Learn MongoDB, Express, Angular, and Node.js for modern web apps.",
+    image: MEAN,
+    syllabus: [
+      "Angular Components & Services",
+      "Node.js & Express Setup",
+      "MongoDB Schemas & Models",
+      "API Development & Integration",
+      "JWT & User Authentication"
+    ],
+    tools: ["Angular CLI", "VS Code", "MongoDB Atlas", "Git", "Postman"],
+    summary: "This course provides in-depth knowledge on Angular front-end combined with Node and MongoDB for scalable web solutions."
+  },
+  {
+    id: 3,
+    title: "Spring Boot with Java",
+    description: "Enterprise app development using Spring Boot and Java backend.",
+    image: SPRING,
+    syllabus: [
+      "Java OOP & Collections",
+      "Spring Boot Setup & Annotations",
+      "JPA with Hibernate",
+      "RESTful APIs & Testing",
+      "Spring Security & JWT"
+    ],
+    tools: ["IntelliJ IDEA", "Postman", "Maven", "MySQL", "Spring Tool Suite"],
+    summary: "Spring Boot with Java is designed to build enterprise-grade backend systems with modern practices and security features."
+  },
+  {
+    id: 4,
+    title: "Artificial Intelligence",
+    description: "Build smart systems with AI concepts and tools like Python, TensorFlow.",
+    image: AI,
+    syllabus: [
+      "Python for AI",
+      "Neural Networks & Deep Learning",
+      "TensorFlow & Keras",
+      "NLP & Computer Vision",
+      "Model Deployment"
+    ],
+    tools: ["Jupyter Notebook", "TensorFlow", "OpenCV", "Google Colab", "Sci-kit Learn"],
+    summary: "The AI course covers foundational to advanced machine learning and deep learning techniques to build intelligent applications."
+  },
+  {
+    id: 5,
+    title: "Data Science & Analytics",
+    description: "Data wrangling, visualization, ML models, using Python/R.",
+    image: DATA,
+    syllabus: [
+      "Python for Data Analysis",
+      "Pandas & Numpy",
+      "Data Visualization with Matplotlib & Seaborn",
+      "Machine Learning Basics",
+      "Projects with Real Datasets"
+    ],
+    tools: ["JupyterLab", "RStudio", "Python", "Power BI", "Tableau"],
+    summary: "Learn to analyze, visualize and interpret data trends using statistical and machine learning tools."
+  },
+  {
+    id: 6,
+    title: "AutoCAD Training",
+    description: "Learn 2D/3D drafting and design using industry-standard AutoCAD tools.",
+    image: AUTOCAD,
+    syllabus: [
+      "2D Drafting Fundamentals",
+      "3D Modeling Basics",
+      "Layer Management",
+      "Plotting & Layouts",
+      "Isometric Drawings"
+    ],
+    tools: ["AutoCAD", "DraftSight", "DWG TrueView"],
+    summary: "Master AutoCAD for engineering, architectural, and civil drawing designs, ideal for both beginners and professionals."
+  },
+  {
+    id: 7,
+    title: "Python Programming",
+    description: "From beginner to advanced scripting, OOP, and libraries.",
+    image: PYTHON,
+    syllabus: [
+      "Python Syntax & Data Types",
+      "Control Structures & Functions",
+      "Object-Oriented Programming",
+      "File Handling & Modules",
+      "Libraries: NumPy, Pandas"
+    ],
+    tools: ["PyCharm", "Jupyter Notebook", "Anaconda", "IDLE"],
+    summary: "This course equips you with Python programming skills suitable for web development, automation, and data science."
+  },
+  {
+    id: 8,
+    title: "Full Stack Web Development",
+    description: "Complete front-end and back-end development bootcamp.",
+    image: FULLSTACK,
+    syllabus: [
+      "HTML, CSS, JavaScript",
+      "Front-End: React or Angular",
+      "Back-End: Node.js/Java",
+      "Database: MongoDB/MySQL",
+      "Capstone Project"
+    ],
+    tools: ["VS Code", "Postman", "GitHub", "Docker", "MySQL Workbench"],
+    summary: "An intensive bootcamp covering all layers of web development including front-end, back-end, and database connectivity."
+  },
+  {
+    id: 9,
+    title: "Cloud Computing Basics",
+    description: "Understand AWS, Azure, and DevOps cloud fundamentals.",
+    image: CLOUD,
+    syllabus: [
+      "Cloud Concepts & Services",
+      "AWS EC2, S3, IAM",
+      "Azure Fundamentals",
+      "CI/CD with Jenkins",
+      "Docker & Kubernetes Basics"
+    ],
+    tools: ["AWS Console", "Azure Portal", "Jenkins", "Git", "Docker"],
+    summary: "Gain hands-on knowledge in cloud technologies and infrastructure automation, ideal for IT and devops beginners."
+  }
+],
 
 
 
