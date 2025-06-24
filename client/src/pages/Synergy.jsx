@@ -2,6 +2,10 @@ import React from 'react'
 
 export const Synergy = () => {
   return (
+
+    <>
+    </>
+
     <div>
        <Helmet>
         <title>CADD Centre Tenkasi - Best CAD Training Institute</title>
@@ -9,5 +13,6 @@ export const Synergy = () => {
         <meta name="keywords" content="CADD Centre, CAD Courses, Tenkasi, AutoCAD, Revit, SolidWorks" />
       </Helmet>
     </div>
+
   )
 }
